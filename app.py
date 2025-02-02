@@ -8,13 +8,13 @@ app = Flask(__name__)
 # GitHub raw content URL with the 'icon' folder
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/KING07-A/All_Icon/refs/heads/main/icon"
 
-@app.route('/akiru-item-info', methods=['GET'])
+@app.route('/king-item-info', methods=['GET'])
 def get_item_image():
     item_id = request.args.get('item_id')
     api_key = request.args.get('key')
 
     # API key validation for multiple keys
-    valid_api_keys = ["AKIRU", "FREE-FIRE"]
+    valid_api_keys = ["KING", "KING"]
     if api_key not in valid_api_keys:
         return jsonify({"error": "Invalid API key"}), 401
 
