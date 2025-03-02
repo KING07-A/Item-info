@@ -39,7 +39,7 @@ def get_item_image():
     # Add text "AKIRU" to the center of the image
     draw = ImageDraw.Draw(image)
     font = ImageFont.load_default()  # Default font, you can customize it
-    text = "AKIRU"
+    text = "KING"
     
     # Use textbbox to calculate the size of the text
     bbox = draw.textbbox((0, 0), text, font=font)
