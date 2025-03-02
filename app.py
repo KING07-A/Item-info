@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 
 # GitHub raw content URL with the 'icon' folder
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/KING07-A/All_Icon/refs/heads/main/icon"
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/KING07-A/All_Icon/refs/heads/main/icon/"
 
 @app.route('/king-item-info', methods=['GET'])
 def get_item_image():
